@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html {
+  height: 100%;
+}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,ul {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  color: #606266;
+  &:hover {
+    text-decoration: none;
+    color: #409eff;
+  }
+}
+  
+.body{
+	// width: 100vw;
+	// min-height: 100vh;
+	font-family: "-apple-system", "Helvetica", "Microsoft YaHei", "Ping Hei", "Arial";
+	-webkit-text-size-adjust: none;
+	font-size: 16px;
+}
+// 清除浮动
+.clearfix {
+	zoom: 1;
+	&:after {
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		line-height: 0;
+		overflow: hidden;
+		visibility: hidden;
+	}
+}
+
+// 多行溢出 手机端使用
+.txt-cut-1{
+	white-space:nowrap;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: block;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.txt-cut-2{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
+.txt-cut-3{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+	width: 5px;
+	height: 2px;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+	-webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:vertical {
+	height: 12px;
+	background-image: linear-gradient(180deg, #1EFFFD 0%, #05A1FE 100%);
+	-webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	width: 12px;
+	background-image: linear-gradient(180deg, #1EFFFD 0%, #05A1FE 100%);
+	-webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{
+	background-image: linear-gradient(270deg, #1EFFFD 2%, #05A1FE 100%);
+}
+::-webkit-scrollbar-corner{
+	background-color: transparent;
+}
+  
